@@ -14,7 +14,7 @@ def sum_fib(n):
     return sum(total)
     
     
-#Without importing
+#factorial funtion without importing 
 
 def factorial(k):
     fact = 1
@@ -25,13 +25,10 @@ def factorial(k):
     return fact
 
 
-def fibo(n):
-    if n <= 1:
-        return n
+#factorial funtion without importing -- using recursion
+
+def factorial(k):
+    if k == 0:
+        return 1
     else:
-        return fibo(n-1) + fibo(n-2)
-    
-    
-def sum_fib(n):
-    total = [factorial(fibo(i)) for i in range(0, n)]
-    return sum(total)
+        return k*factorial(k-1)
