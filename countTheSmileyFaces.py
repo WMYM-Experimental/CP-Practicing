@@ -24,7 +24,8 @@ Note
   Order of the face (eyes, nose, mouth) elements will always be the same.
 '''
 
-#first solution
+
+#second solution (first solution refactored)
 def countSmileys(arr):
     count = 0
     eyes = ":;"
@@ -38,3 +39,16 @@ def countSmileys(arr):
             if i[0] in eyes and i[1] in smiles:
                 count += 1
     return count
+  
+  
+  #first solution
+  def count_smileys(arr):
+    c = 0
+    for i in arr:
+        if len(list(i)) > 2:
+            if i[0] in [":",";"] and i[1] in ["-","~"] and i[2] in [")","D"]:
+                c += 1
+        else:
+            if i[0] in [":",";"] and i[1] in [")","D"]:
+                c += 1
+    return c
