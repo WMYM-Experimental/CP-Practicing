@@ -5,9 +5,7 @@ n is an integer
 '''
 
 
-
-#Importing from math
-
+#Importing from math for using factorial built-in function
 from math import *
 
 def fibo(n):
@@ -23,7 +21,6 @@ def sumFibboFActorialsF(n):
     
     
 #factorial funtion without importing 
-
 def factFaster(k):
     fact = 1
     while k > 1 :
@@ -34,7 +31,6 @@ def factFaster(k):
 
 
 #factorial funtion without importing -- using recursion
-
 def factRecursive(k):
     if k == 0:
         return 1
