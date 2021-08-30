@@ -1,3 +1,11 @@
+'''
+Fiven a text and a subtext always inside of the text.
+Found the max distance (left or right) between the start of the text to the start of the subtext
+or the end of the subtext to the end of the subtext
+
+text and subtext must be in English alphabet
+'''
+
 def maxDistance(text,subText):
     nText = len(text)
     nSub = len(subText)
