@@ -1,3 +1,12 @@
+'''
+given this sequence:
+
+1, 2, 3, 4, 3, 4, 5, 6, 5, 6, 7, 8 ...
+
+deduce and between 1 and 9223372036854775807
+return the corresponding numer of the sequence
+'''
+
 import math
 
 def sequence(n):
