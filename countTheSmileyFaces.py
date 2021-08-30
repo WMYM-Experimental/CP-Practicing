@@ -20,5 +20,21 @@ Example:
   countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
   
 Note
-  In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
+  In case of an empty array return 0. You will not be tested with invalid input (input will always be an array).
+  Order of the face (eyes, nose, mouth) elements will always be the same.
 '''
+
+#first solution
+def countSmileys(arr):
+    count = 0
+    eyes = ":;"
+    noses = "-~"
+    smiles = ")D"
+    for i in arr:
+        if len(list(i)) > 2:
+            if i[0] in eyes and i[1] in noses and i[2] in smiles:
+                count += 1
+        else:
+            if i[0] in eyes and i[1] in smiles:
+                count += 1
+    return count
