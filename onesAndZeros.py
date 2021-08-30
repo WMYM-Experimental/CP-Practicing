@@ -16,3 +16,8 @@ Examples:
   Testing: [1, 1, 1, 1] ==> 15
   Testing: [1, 0, 1, 1] ==> 11
 '''
+
+#soluttion
+def binary_array_to_number(binArr):
+    numArr = "".join(map(str,binArr))
+    return int(numArr,2)
