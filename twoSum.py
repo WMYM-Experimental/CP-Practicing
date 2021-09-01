@@ -5,3 +5,12 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 '''
+
+def twoSum(array,value):
+    band = False
+    for i in array:
+        diff = value - i
+        if diff in array:
+            band = True
+            return band
+    return band
