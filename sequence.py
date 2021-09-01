@@ -25,4 +25,4 @@ def a(n):
 
 def b(n):
     n = math.floor(n/2) - math.floor((n+1)/4)
-    return n
+    return n + 1
