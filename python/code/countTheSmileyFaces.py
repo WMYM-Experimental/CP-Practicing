@@ -26,7 +26,7 @@ Note
 
 
 #second solution (first solution refactored)
-def countSmileys(arr):
+def count_smileys(arr):
     count = 0
     eyes = ":;"
     noses = "-~"
