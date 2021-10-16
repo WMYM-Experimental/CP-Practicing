@@ -15,12 +15,12 @@ Output : array[] = [5, 4, 3, 2, 1]
 '''
 
 #list slicing
-def reverseArrayOrString(array):
+def reverse_array_or_string(array):
     return array[::-1]
 
 
 #for both types of variables
-def reverseArrayOrString(array):
+def reverse_array_or_string(array):
     if isinstance(array,str):
         array = list(array)
         array = "".join(reverseArray(array))
@@ -32,7 +32,7 @@ def reverseArrayOrString(array):
 
 
 #for only arrays not strings
-def reverseArray(array):
+def reverse_array(array):
     array = list(array)
     n = len(array) - 1
     i = 0
