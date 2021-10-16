@@ -23,10 +23,10 @@ def reverse_array_or_string(array):
 def reverse_array_or_string(array):
     if isinstance(array,str):
         array = list(array)
-        array = "".join(reverseArray(array))
+        array = "".join(reverse_array(array))
         return array
     elif isinstance(array, list):
-        return reverseArray(array)
+        return reverse_array(array)
     else:
         return "it is not a list or array"
 
