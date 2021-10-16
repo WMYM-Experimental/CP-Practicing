@@ -2,7 +2,7 @@
 Given two lists of integers, is there a set of numbers — one from each list — whose sum is equal to a specified value
 '''
 
-def sumOfTwo(arrayA,arrayB,value):
+def sum_of_two(arrayA,arrayB,value):
     band = False
     for a in arrayA:
         diff = value - a
