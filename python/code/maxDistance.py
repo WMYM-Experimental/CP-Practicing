@@ -6,7 +6,7 @@ or the end of the subtext to the end of the subtext
 text and subtext must be in English alphabet
 '''
 
-def maxDistance(text,subText):
+def max_distance(text,subText):
     nText = len(text)
     nSub = len(subText)
     if text.isalpha() and subText.isalpha():
