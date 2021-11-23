@@ -21,3 +21,9 @@ def reverseString(text):
   #reverse a string
   for char in range(len(text)-1,-1,-1):
     return text[char]
+
+  
+ #list comprenhension and reversed list way way
+def reverseString(text):
+  #reverse a string
+  return ''.join(char for char in list(reversed(text)))
