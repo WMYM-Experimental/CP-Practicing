@@ -1,5 +1,5 @@
 '''
-Given an arry, reverse it
+Given an string, reverse it
 '''
 
 #long way
