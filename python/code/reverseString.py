@@ -14,3 +14,10 @@ def reverseString(text):
 def reverseString(text):
   #reverse a string
   return text[::-1]
+  
+
+#traditional way
+def reverseString(text):
+  #reverse a string
+  for char in range(len(text)-1,-1,-1):
+    return text[char]
