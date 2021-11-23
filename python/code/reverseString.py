@@ -1,5 +1,5 @@
 '''
-Given an arry, reverseit
+Given an arry, reverse it
 '''
 
 #long way
