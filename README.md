@@ -1,6 +1,7 @@
 # CP Practicing
 
 This repo was created for practicing pourposes
+For now i need to add docs of the functions
 
 ## What you will find here?
 
