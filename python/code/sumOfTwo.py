@@ -3,10 +3,11 @@ Given two lists of integers, is there a set of numbers â€” one from each list â€
 '''
 
 def sum_of_two(arrayA,arrayB,value):
-    band = False
+    """verify if the difference of A elements minus value is in B"""
+    flag = False
     for a in arrayA:
         diff = value - a
         if diff in arrayB:
-            band = True
-            return band
-    return band
+            flag = True
+            return flag
+    return flag
