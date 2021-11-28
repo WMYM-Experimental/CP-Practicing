@@ -27,28 +27,30 @@ Note
 
 #second solution (first solution refactored)
 def count_smileys(arr):
-    count = 0
-    eyes = ":;"
-    noses = "-~"
-    smiles = ")D"
-    for i in arr:
-        if len(list(i)) > 2:
-            if i[0] in eyes and i[1] in noses and i[2] in smiles:
-                count += 1
-        else:
-            if i[0] in eyes and i[1] in smiles:
-                count += 1
-    return count
+  """count valid smileys from an array, better reading"""
+  count = 0
+  eyes = ":;"
+  noses = "-~"
+  smiles = ")D"
+  for i in arr:
+      if len(list(i)) > 2:
+          if i[0] in eyes and i[1] in noses and i[2] in smiles:
+              count += 1
+      else:
+          if i[0] in eyes and i[1] in smiles:
+              count += 1
+  return count
   
   
   #first solution
-  def count_smileys(arr):
-    c = 0
-    for i in arr:
-        if len(list(i)) > 2:
-            if i[0] in [":",";"] and i[1] in ["-","~"] and i[2] in [")","D"]:
-                c += 1
-        else:
-            if i[0] in [":",";"] and i[1] in [")","D"]:
-                c += 1
-    return c
+def count_smileys(arr):
+  """count valid smileys from an array"""
+  c = 0
+  for i in arr:
+      if len(list(i)) > 2:
+          if i[0] in [":",";"] and i[1] in ["-","~"] and i[2] in [")","D"]:
+              c += 1
+      else:
+          if i[0] in [":",";"] and i[1] in [")","D"]:
+              c += 1
+  return c
