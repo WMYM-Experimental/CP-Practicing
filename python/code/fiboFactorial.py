@@ -9,6 +9,7 @@ n is an integer
 from math import *
 
 def fibo(n):
+    """Fibo value with recursive algorithm"""
     if n <= 1:
         return n
     else:
@@ -16,12 +17,14 @@ def fibo(n):
     
     
 def sumFibboFActorialsF(n):
+    """sum al fibo numbers in a range with list comprenhension and math librarry"""
     total = [factorial(fibo(i)) for i in range(0, n)]
     return sum(total)
     
     
 #factorial funtion without importing 
 def factFaster(k):
+    """factorial value from for bucle"""
     fact = 1
     while k > 1 :
         fact = fact*k
@@ -32,6 +35,7 @@ def factFaster(k):
 
 #factorial funtion without importing -- using recursion
 def factRecursive(k):
+    """factorial value from recursive algorithm"""
     if k == 0:
         return 1
     else:
