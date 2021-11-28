@@ -19,5 +19,6 @@ Examples:
 
 #soluttion
 def binary_array_to_number(binArr):
-    numArr = "".join(map(str,binArr))
-    return int(numArr,2)
+  """Given an array of ones and zeroes, convert the equivalent binary value to an integer."""
+  numArr = "".join(map(str,binArr))
+  return int(numArr,2)
