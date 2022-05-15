@@ -1,4 +1,7 @@
-# CP Practicing
+---
+# REPO REPLACED BY [DSA.py](https://github.com/WashingtonYandun/DSA.py)
+---
+## CP Practicing
 
 This repo was created for practicing pourposes
 For now i need to add docs of the functions
